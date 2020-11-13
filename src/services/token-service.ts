@@ -30,7 +30,7 @@ const TokenService = {
     return !!TokenService.getAuthToken();
   },
 
-  parseJwt(jwt: string): Payload {
+  parseJwt(jwt: string): any {
     return jwtDecode(jwt);
   },
 
