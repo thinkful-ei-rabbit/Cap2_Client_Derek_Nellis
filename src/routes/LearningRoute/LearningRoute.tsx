@@ -2,7 +2,7 @@ import React from 'react';
 
 import { LearningRouteProps } from 'src/types/component-props';
 import { LangContext } from 'src/context/langContext';
-import { LangService, TokenService } from 'src/services';
+import { LangService } from 'src/services';
 import { GuessForm, Results } from 'src/components';
 
 const LearningRoute: LearningRouteProps = () => {
@@ -38,7 +38,7 @@ const LearningRoute: LearningRouteProps = () => {
 
   return (
     <>
-      <h1>{Context?.selectedLang?.name}</h1>
+      <h1>{Context?.language?.name}</h1>
       {results ? (
         <Results
           guess={guessSub}

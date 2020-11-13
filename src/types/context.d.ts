@@ -77,8 +77,8 @@ declare namespace LC {
     words: Word[] | null;
     head: Head | null;
     getLangWords(): Promise<string | undefined>;
-    selectLang(id: number): void;
-    selectedLang?: Lang | null;
+    // selectLang(id: number): void;
+    // selectedLang?: Lang | null;
   };
 
   type LangProviderProps = (props: {

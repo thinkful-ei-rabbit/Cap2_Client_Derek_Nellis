@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import { AppProps } from 'src/types/component-props';
 import {
@@ -17,7 +17,7 @@ import {
 } from 'src/routes';
 
 const App: AppProps = () => {
-  const [hasError, setHasError] = React.useState<boolean>(false);
+  // const [hasError, setHasError] = React.useState<boolean>(false);
 
   // const getDerivedStateFromError = (error) => {
   //   console.error(error);
@@ -28,7 +28,7 @@ const App: AppProps = () => {
     <div className="App">
       <Header />
       <main>
-        <aside>{hasError && 'There was an error! Oh no!'}</aside>
+        {/* <aside>{hasError && 'There was an error! Oh no!'}</aside> */}
         <Switch>
           <PrivateRoute
             exact

@@ -21,7 +21,6 @@ export { default as LoginForm } from './LoginForm/LoginForm';
 export { default as PrivateRoute } from './PrivateRoute/PrivateRoute';
 export { default as PublicOnlyRoute } from './PublicOnlyRoute/PublicOnlyRoute';
 export { default as RegistrationForm } from './RegistrationForm/RegistrationForm';
-export { default as ChooseLang } from './chooseLang/chooseLang'
-export { default as SpanishPage } from './spanishPage/spanishPage'
-export { default as GuessForm } from './guessForm/guessForm'
-export { default as Results } from './results/results'
+export { default as ChooseLang } from './chooseLang/chooseLang';
+export { default as GuessForm } from './guessForm/guessForm';
+export { default as Results } from './results/results';

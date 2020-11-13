@@ -12,7 +12,7 @@ const LangProvider: LC.LangProviderProps = ({ idle, children }) => {
   );
   const [words, setWords] = React.useState<LC.Word[] | null>(null);
   const [head, setHead] = React.useState<LC.Head | null>(null);
-  const [langIdx, setLangIdx] = React.useState<number>(0);
+  // const [langIdx, setLangIdx] = React.useState<number>(0);
 
   const getLangWords = async () => {
     const data = await LangService.getLanguage();
@@ -43,9 +43,9 @@ const LangProvider: LC.LangProviderProps = ({ idle, children }) => {
     words,
     head,
     getLangWords,
-    selectLang(id: number) {
-      setLangIdx(id);
-    },
+    // selectLang(id: number) {
+    //   setLangIdx(id);
+    // },
     // selectedLang: language && language[langIdx],
   };
 
