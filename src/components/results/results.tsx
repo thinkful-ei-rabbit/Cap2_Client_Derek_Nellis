@@ -5,7 +5,7 @@ import './results.scss';
 import { ResultsProps } from 'src/types/component-props';
 import { Button } from 'src/components';
 
-const Results: ResultsProps = ({ guess, results, head, getNext }) => {
+const Results: ResultsProps = ({ guess, results, getNext }) => {
   const firstInput = React.createRef<HTMLButtonElement>();
 
   return (
@@ -21,9 +21,9 @@ const Results: ResultsProps = ({ guess, results, head, getNext }) => {
       <div className="DisplayFeedback">
         <p>
           The correct translation for{' '}
-          <strong>{head?.nextWord}</strong> was{' '}
+          <strong>{guess.original}</strong> was{' '}
           <strong>{results?.answer}</strong> and you chose{' '}
-          <strong>{guess}</strong>!
+          <strong>{guess.guess}</strong>!
         </p>
       </div>
       <Button ref={firstInput} onClick={() => getNext()}>

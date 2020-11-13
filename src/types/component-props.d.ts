@@ -49,9 +49,8 @@ type RegistrationFormProps = (props: {
 }) => JSX.Element;
 
 type ResultsProps = (props: {
-  guess: string;
+  guess: { original: string; guess: string };
   results: LC.Guess | null;
-  head: LC.Head | null;
   getNext(): void;
 }) => JSX.Element;
 
