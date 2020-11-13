@@ -1,0 +1,26 @@
+@import 'src/styles/mixins/card.scss';
+
+.choose-lang-container {
+  margin-bottom: 20px;
+
+  h3 {
+    margin-top: 10px;
+  }
+
+  a {
+    margin-top: 10px;
+    @include Card();
+  }
+}
+
+.lang-words-list {
+  width: 80%;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  li {
+    margin: 10px 20px 15px;
+    @include Card();
+  }
+}

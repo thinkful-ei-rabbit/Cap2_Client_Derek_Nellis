@@ -1,0 +1,6 @@
+.Label, .Input, .Textarea {
+  flex-direction: row;
+  > * {
+    margin: 0 5px 0 2px;
+  }
+}

@@ -1,0 +1,20 @@
+@import 'src/styles/mixins/card.scss';
+
+.next-word {
+  font-weight: bold;
+  margin-bottom: 15px;
+  @include Card();
+}
+
+.guess-form {
+  margin: 20px;
+
+  > * {
+    margin-bottom: 5px;
+  }
+
+  input, button {
+    font-size: 1.3rem;
+    padding: 0 6px;
+  }
+}

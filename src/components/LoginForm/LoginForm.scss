@@ -1,0 +1,10 @@
+@import 'src/styles/mixins/card.scss';
+
+.LoginForm {
+  width: 100%;
+  @include Card();
+
+  footer > * {
+    margin: 10px;
+  }
+}

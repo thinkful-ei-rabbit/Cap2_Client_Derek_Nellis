@@ -1,0 +1,11 @@
+.main-header .headline {
+  font-weight: normal;
+}
+
+.header-nav {
+  flex-direction: row;
+
+  > * {
+    margin: 0 10px 15px;
+  }
+}
