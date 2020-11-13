@@ -1,8 +1,11 @@
 # Spaced Repetition Capstone
 
 https://spaced-rep-app.vercel.app
+
 **Test User**
+
 Name: admin
+
 Password: pass
 
 ## Setup
@@ -10,7 +13,7 @@ Password: pass
 To setup the application
 
 1. Fork and clone the project to your machine
-2. `npm install`. This will also install the application *Cypress.io* for running browser integration tests
+2. `npm install`. This will also install the application _Cypress.io_ for running browser integration tests
 
 The project expects you have the Spaced repetition API project setup and running on http://localhost:8000.
 
