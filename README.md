@@ -1,5 +1,10 @@
 # Spaced Repetition Capstone
 
+https://spaced-rep-app.vercel.app
+**Test User**
+Name: admin
+Password: pass
+
 ## Setup
 
 To setup the application
