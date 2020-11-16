@@ -42,10 +42,13 @@ const RegistrationForm: RegistrationFormProps = ({
       return;
     }
 
+    const userV = username.value;
+    const passV = password.value;
+
     name.value = '';
     username.value = '';
     password.value = '';
-    onRegistrationSuccess();
+    onRegistrationSuccess(userV, passV);
   };
 
   return (

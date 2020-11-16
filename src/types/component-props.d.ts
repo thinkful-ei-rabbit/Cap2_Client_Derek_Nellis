@@ -45,7 +45,7 @@ type PrivatePublicRouteProps = (props: {
 }) => JSX.Element;
 
 type RegistrationFormProps = (props: {
-  onRegistrationSuccess(): void;
+  onRegistrationSuccess(username: string, password: string): void;
 }) => JSX.Element;
 
 type ResultsProps = (props: {
@@ -70,6 +70,7 @@ type LoginRouteProps = (props: {
 type NotFoundRouteProps = () => JSX.Element;
 
 type RegistrationRouteProps = (props: {
+  location: Location<{ from: string }>;
   history: History;
 }) => JSX.Element;
 

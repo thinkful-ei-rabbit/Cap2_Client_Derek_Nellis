@@ -37,13 +37,13 @@ rules:
   no-trailing-spaces: 0
   no-underscore-dangle: 0
   no-empty-function: 0
-  #! specific for initial-state declarations
-  '@typescript-eslint/no-empty-function':
-    - error
-    - allow:
-        - methods
   react/prop-types: 0
   react/display-name: 0
   react/jsx-filename-extension: 0
   react/jsx-props-no-spreading: 0
   react/destructuring-assignment: 0
+  #! specific for initial-state declarations
+  '@typescript-eslint/no-empty-function':
+    - error
+    - allow:
+        - methods
